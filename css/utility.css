@@ -1,0 +1,81 @@
+:root {
+    /* Crucial Values*/
+    --phi_value: 1.618;
+    /* --phi_value_pt: 1.618pt; */
+    /*
+		Golden Fibonacci
+	*/
+    --base: 100%;
+
+    --phi_10: calc(var(--base) / var(--phi_value));
+    --phi_9: calc(var(--base) - var(--phi_10));
+
+    --phi_8: calc(var(--phi_9) / var(--phi_value));
+    --phi_7: calc(var(--phi_9) - var(--phi_8));
+
+    --phi_6: calc(var(--phi_7) / var(--phi_value));
+    --phi_5: calc(var(--phi_7) - var(--phi_6));
+
+    --phi_4: calc(var(--phi_5) / var(--phi_value));
+    --phi_3: calc(var(--phi_5) - var(--phi_4));
+
+    --phi_2: calc(var(--phi_3) / var(--phi_value));
+    --phi_1: calc(var(--phi_3) - var(--phi_2));
+
+    --h1: calc(var(--h2) * var(--phi_value));
+    --h2: calc(var(--h3) * var(--phi_value));
+    --h3: calc(var(--h4) * var(--phi_value));
+    --h4: calc(var(--h5) * var(--phi_value));
+    --h6: calc(var(--h5) / var(--phi_value));
+
+    /* Colors */
+    --primary: #3399ff;
+    --secondary: #828282;
+    --disabled: #e0e0e0;
+    --success: #2bd743;
+    --warning: #f3ca3e;
+    --danger: #ff5f58;
+    --light: #f2f2f2;
+    --dark: #333333;
+}
+
+/*
+	flex layouts
+	other properties will be added as per requirements
+*/
+div[class*="flex"] {
+    display: flex;
+}
+
+.flex-row,
+.flex {
+    flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+.justify-space-around {
+    justify-content: space-around;
+}
+.justify-space-between {
+    justify-content: space-between;
+}

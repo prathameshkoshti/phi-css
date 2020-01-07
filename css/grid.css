@@ -1,0 +1,155 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 960px;
+    padding: 0 20px;
+}
+.row {
+    width: 100%;
+    position: relative;
+    margin: 7px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.base {
+    width: var(--base);
+}
+
+div[class|="phi-col"],
+.base {
+    height: 50px;
+    margin-left: 0px;
+    padding: 5px;
+}
+
+div[class|="phi-col"]:after,
+.base:after {
+    content: attr(class);
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    height: 100%;
+    background: #333333;
+    padding: 6px;
+}
+
+.row .phi-col-xl {
+    width: calc(var(--base) - (var(--phi_6) + var(--phi_6)));
+}
+
+.row .phi-col-10,
+.row .phi-col-lg {
+    width: var(--phi_10);
+}
+
+.row .phi-col-9,
+.row .phi-col-md {
+    width: var(--phi_9);
+}
+
+.row .phi-col-8,
+.row .phi-col-sm {
+    width: var(--phi_8);
+}
+
+.row .phi-col-7,
+.row .phi-col-xs {
+    width: var(--phi_7);
+}
+
+.row .phi-col-6 {
+    width: var(--phi_6);
+}
+
+.row .phi-col-5 {
+    width: var(--phi_5);
+}
+
+.row .phi-col-4 {
+    width: var(--phi_4);
+}
+
+.row .phi-col-3 {
+    width: var(--phi_3);
+}
+
+.row .phi-col-2 {
+    width: var(--phi_2);
+}
+
+.row .phi-col-1 {
+    width: var(--phi_1);
+}
+
+.row .phi-col-offset-xl {
+    margin-left: calc(var(--base) - (var(--phi_6) + var(--phi_6))) !important;
+}
+
+.row .phi-col-offset-10,
+.row .phi-col-offset-lg {
+    margin-left: var(--phi_10) !important;
+}
+
+.row .phi-col-offset-9,
+.row .phi-col-offset-md {
+    margin-left: var(--phi_9) !important;
+}
+
+.row .phi-col-offset-8,
+.row .phi-col-offset-sm {
+    margin-left: var(--phi_8) !important;
+}
+
+.row .phi-col-offset-7,
+.row .phi-col-offset-xs {
+    margin-left: var(--phi_7) !important;
+}
+
+.row .phi-col-offset-6 {
+    margin-left: var(--phi_6) !important;
+}
+
+.row .phi-col-offset-5 {
+    margin-left: var(--phi_5) !important;
+}
+
+.row .phi-col-offset-4 {
+    margin-left: var(--phi_4) !important;
+}
+
+.row .phi-col-offset-3 {
+    margin-left: var(--phi_3) !important;
+}
+
+.row .phi-col-offset-2 {
+    margin-left: var(--phi_2) !important;
+}
+
+.row .phi-col-offset-1 {
+    margin-left: var(--phi_1) !important;
+}
+
+@media only screen and (max-width: 765px) {
+    .container {
+        max-width: 720px;
+    }
+    div[class^="phi-col"],
+    .base {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .container {
+        width: 100%;
+    }
+}
