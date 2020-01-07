@@ -1,22 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Code|Playfair+Display|Poppins&display=swap");
 :root {
-    --h5: 18px;
-    /* Font Family */
-    --sans-serif-font: "Poppins", sans-serif;
-    --serif-font: "Playfair Display", serif;
-    --monospace: "Fira Code", monospace;
+  --h5: 18px;
+  /* Font Family */
+  --sans-serif-font: "Poppins", sans-serif;
+  --serif-font: "Playfair Display", serif;
+  --monospace: "Fira Code", monospace;
 }
 /*
 	Style 1 - Poppins - Sans Serif
 */
 .sans-serif-font {
-    font-family: var(--sans-serif-font);
+  font-family: var(--sans-serif-font);
 }
 /*
 	Style 2 - Playfair Display - Serif
 */
 .serif-font {
-    font-family: var(--serif-font);
+  font-family: var(--serif-font);
 }
 
 h1,
@@ -26,7 +26,7 @@ h4,
 h5,
 h6,
 p {
-    width: 100%;
+  width: 100%;
 }
 
 html,
@@ -87,14 +87,14 @@ thead,
 tr,
 th,
 td {
-    font-size: var(--h5);
-    line-height: var(--phi_value);
-    font-family: var(--sans-serif-font);
-    font-weight: 400;
-    color: var(--black);
-    text-align: left;
-    word-wrap: break-word;
-    letter-spacing: 0.03rem;
+  font-size: var(--h5);
+  line-height: var(--phi_value);
+  font-family: var(--sans-serif-font);
+  font-weight: 400;
+  color: var(--black);
+  text-align: left;
+  word-wrap: break-word;
+  letter-spacing: 0.03rem;
 }
 
 /*
@@ -107,7 +107,7 @@ body.font-style-1 h3,
 body.font-style-1 h4,
 body.font-style-1 h5,
 body.font-style-1 h6 {
-    font-family: var(--serif-font);
+  font-family: var(--serif-font);
 }
 
 /*
@@ -120,10 +120,10 @@ body.font-style-2 h3,
 body.font-style-2 h4,
 body.font-style-2 h5,
 body.font-style-2 h6 {
-    font-family: var(--sans-serif-font);
+  font-family: var(--sans-serif-font);
 }
 body.font-style-2 {
-    font-family: var(--serif-font);
+  font-family: var(--serif-font);
 }
 
 h1,
@@ -132,128 +132,128 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 600;
-    letter-spacing: var(--phi_value_pt);
+  font-weight: 600;
+  letter-spacing: var(--phi_value_pt);
 }
 h6 {
-    font-size: var(--h6);
+  font-size: var(--h6);
 }
 h5 {
-    font-size: var(--h5);
+  font-size: var(--h5);
 }
 h4 {
-    font-size: var(--h4);
+  font-size: var(--h4);
 }
 h3 {
-    font-size: var(--h3);
+  font-size: var(--h3);
 }
 h2 {
-    font-size: var(--h2);
+  font-size: var(--h2);
 }
 h1 {
-    font-size: var(--h1);
+  font-size: var(--h1);
 }
 p {
-    max-width: 80ch;
-    margin-bottom: 1.618rem;
+  max-width: 80ch;
+  margin-bottom: 1.618rem;
 }
 
 ul {
-    list-style: disc inside;
+  list-style: disc inside;
 }
 ol {
-    list-style: decimal inside;
+  list-style: decimal inside;
 }
 ul,
 ol,
 dl {
-    margin-top: 0;
-    padding-left: 1.618rem;
+  margin-top: 0;
+  padding-left: 1.618rem;
 }
 dl,
 ul,
 ol {
-    margin-bottom: calc(1rem * var(--phi_value));
+  margin-bottom: calc(1rem * var(--phi_value));
 }
 
 dd,
 dt,
 li {
-    margin-bottom: calc(0.618rem * var(--phi_value));
+  margin-bottom: calc(0.618rem * var(--phi_value));
 }
 dt {
-    font-weight: 600;
+  font-weight: 600;
 }
 dd {
-    margin-left: calc(2 * 1.618rem);
+  margin-left: calc(2 * 1.618rem);
 }
 
 blockquote {
-    width: 100%;
-    border-left: 0.3rem solid var(--accent_color);
-    margin-left: 0;
-    margin-right: 0;
-    padding: 10px calc(10px * var(--phi_value));
+  width: 100%;
+  border-left: 0.3rem solid var(--accent_color);
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px calc(10px * var(--phi_value));
 }
 
 blockquote *:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 blockquote p {
-    max-width: 60ch;
+  max-width: 60ch;
 }
 
 code,
 kbd,
 samp {
-    font-family: var(--monospace);
-    color: #434e57;
+  font-family: var(--monospace);
+  color: #434e57;
 }
 samp {
-    font-weight: bold;
-    color: var(--dark);
+  font-weight: bold;
+  color: var(--dark);
 }
 code,
 kbd,
 pre {
-    background: #efefef;
+  background: #efefef;
 }
 
 pre > code {
-    margin-left: 0;
-    white-space: pre;
+  margin-left: 0;
+  white-space: pre;
 }
 kbd,
 pre {
-    border: 0.05rem solid gainsboro;
+  border: 0.05rem solid gainsboro;
 }
 kbd,
 code {
-    padding: 0.2rem 0.3rem;
-    border-radius: 3px;
-    margin: 0 0.618rem;
-    white-space: nowrap;
+  padding: 0.2rem 0.3rem;
+  border-radius: 3px;
+  margin: 0 0.618rem;
+  white-space: nowrap;
 }
 pre {
-    border-radius: 3px;
-    width: 100%;
-    padding: 1rem 1.618rem;
-    font-size: 12px;
-    margin: 1.618rem auto;
+  border-radius: 3px;
+  width: 100%;
+  padding: 1rem 1.618rem;
+  font-size: 12px;
+  margin: 1.618rem auto;
 }
 
 @media only screen and (max-width: 765px) {
-    :root {
-        --h5: 16px;
-    }
-    p {
-        max-width: 60ch;
-    }
+  :root {
+    --h5: 16px;
+  }
+  p {
+    max-width: 60ch;
+  }
 }
 
 @media only screen and (max-width: 640px) {
-    :root {
-        --h5: 14px;
-    }
+  :root {
+    --h5: 14px;
+  }
 }
