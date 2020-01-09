@@ -24,9 +24,8 @@ input[type="submit"] {
   color: #fffffe;
   cursor: pointer;
   display: inline-block;
-  font-size: 0.75rem;
   text-transform: uppercase;
-  height: 2.8rem;
+  height: calc(1.618rem + 0.618rem);
   padding: 0 calc(1.1618 * 1.618rem);
   letter-spacing: 0.1rem;
   text-align: center;
@@ -82,13 +81,19 @@ th {
 /*
 	Form Components
 */
+form {
+  width: 100%;
+}
 fieldset {
   margin-bottom: 1.618rem;
 }
 label {
-  margin-bottom: 0.618rem;
+  display: block;
   width: 100%;
   font-size: 0.8rem;
+}
+label.label-inline {
+  display: inline;
 }
 input[type="email"],
 input[type="number"],
@@ -102,6 +107,7 @@ select {
   margin-bottom: 1.618rem;
   width: 100%;
   border: 0.05rem solid gray;
-  padding: 0.618rem 1rem;
-  font-size: 0.9rem;
+  padding: 0.618rem;
+  font-size: 1.618vh;
+  height: calc(1.618rem + 0.618rem);
 }

@@ -218,6 +218,7 @@ code,
 kbd,
 pre {
   background: #efefef;
+  font-size: 1.618vh;
 }
 
 pre > code {
