@@ -165,16 +165,19 @@ p {
 }
 
 ul {
-  list-style: disc inside;
+  list-style: disc;
 }
 ol {
-  list-style: decimal inside;
+  list-style: decimal;
 }
 ul,
 ol,
 dl {
   margin-top: 0;
   padding-left: 1.618rem;
+  flex-basis: 100%;
+  margin-bottom: calc(1rem / 0.618);
+  margin-left: calc(1rem / 0.618);
 }
 dl,
 ul,
@@ -185,7 +188,7 @@ ol {
 dd,
 dt,
 li {
-  margin-bottom: calc(0.618rem * var(--phi_value));
+  margin-bottom: calc(1rem / 1.618);
 }
 dt {
   font-weight: 600;
@@ -248,6 +251,14 @@ pre {
   padding: 1rem 1.618rem;
   font-size: 12px;
   margin: 1.618rem auto;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
 }
 
 @media only screen and (max-width: 765px) {
