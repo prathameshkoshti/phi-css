@@ -227,7 +227,13 @@ code,
 kbd,
 pre {
   background: #efefef;
-  font-size: 1.618vh;
+  font-size: 14px;
+  margin-left: 0;
+}
+
+p > kbd,
+p > code {
+  margin: 0 0.618rem;
 }
 
 pre > code {
