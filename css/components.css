@@ -112,6 +112,6 @@ select {
   width: 100%;
   border: 0.05rem solid gray;
   padding: 0.618rem;
-  font-size: 1.618vh;
+  font-size: calc(12px + (18 - 12) * ((100vw - 380px) / (1440 - 380)));
   height: calc(1.618rem + 0.618rem);
 }

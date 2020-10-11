@@ -26,7 +26,7 @@
   --h2: calc(var(--h3) * var(--phi));
   --h3: calc(var(--h4) * var(--phi));
   --h4: calc(var(--h5) * var(--phi));
-  --h6: calc(var(--h5) / var(--phi));
+  --h5: calc(var(--h6) * var(--phi));
 
   /* Colors */
   --primary: #3399ff;

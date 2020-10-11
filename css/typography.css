@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Code|Playfair+Display|Poppins&display=swap");
 :root {
-  --h5: 18px;
+  --h6: 16px;
   /* Font Family */
   --sans-serif-font: "Poppins", sans-serif;
   --serif-font: "Playfair Display", serif;
   --monospace: "Fira Code", monospace;
+  font-size: calc(12px + (16 - 12) * ((100vw - 380px) / (1440 - 380)));
 }
 /*
 	Style 1 - Poppins - Sans Serif
@@ -87,7 +88,6 @@ thead,
 tr,
 th,
 td {
-  font-size: var(--h5);
   line-height: var(--phi);
   font-family: var(--sans-serif-font);
   font-weight: 400;
@@ -268,16 +268,7 @@ em {
 }
 
 @media only screen and (max-width: 765px) {
-  :root {
-    --h5: 16px;
-  }
   p {
     max-width: 60ch;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  :root {
-    --h5: 14px;
   }
 }
