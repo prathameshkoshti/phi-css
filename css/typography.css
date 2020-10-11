@@ -225,7 +225,7 @@ pre {
 
 p > kbd,
 p > code {
-  margin: 0 0.618rem;
+  margin: 0 var(--rem-div-phi);
 }
 
 pre > code {
@@ -240,7 +240,7 @@ kbd,
 code {
   padding: 0.2rem 0.3rem;
   border-radius: 3px;
-  margin: 0 0.618rem;
+  margin: 0 var(--rem-div-phi);
   white-space: nowrap;
 }
 pre {
