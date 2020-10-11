@@ -19,21 +19,18 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   background-color: var(--accent_color);
-  border: 2px solid var(--accent_color);
+  border: 1px solid var(--accent_color);
   border-radius: 0;
   color: #fffffe;
   cursor: pointer;
   display: inline-block;
   text-transform: uppercase;
-  height: calc(1.618rem + 0.618rem);
-  padding: 0 calc(1.1618 * 1.618rem);
+  padding: var(--rem-div-phi) 1rem;
+  margin: var(--rem-div-phi) 1rem calc(var(--rem-mul-phi) * var(--phi)) 0;
   letter-spacing: 0.1rem;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  margin: 1.618rem 0;
-  margin-right: 1.618rem;
-  font-weight: 600;
 }
 
 .button.button-secondary {
@@ -77,7 +74,7 @@ th {
 }
 td,
 th {
-  padding: 1rem 1.618rem;
+  padding: 1rem var(--rem-mul-phi);
   text-align: left;
   border-bottom: 0.05rem solid #e1e1e1;
 }
@@ -89,12 +86,12 @@ form {
   width: 100%;
 }
 fieldset {
-  margin-bottom: 1.618rem;
+  margin-bottom: calc(1 * var(--phi));
 }
 label {
   display: block;
   width: 100%;
-  font-size: 0.8rem;
+  font-size: calc(var(--phi) / 1rem);
 }
 label.label-inline {
   display: inline;
@@ -108,10 +105,9 @@ input[type="text"],
 input[type="url"],
 textarea,
 select {
-  margin-bottom: 1.618rem;
+  margin-bottom: var(--rem-mul-phi);
   width: 100%;
   border: 0.05rem solid gray;
-  padding: 0.618rem;
+  padding: var(--rem-div-phi) 1rem;
   font-size: calc(12px + (18 - 12) * ((100vw - 380px) / (1440 - 380)));
-  height: calc(1.618rem + 0.618rem);
 }

@@ -1,6 +1,8 @@
 :root {
   /* Crucial Values*/
   --phi: 1.618;
+  --rem-mul-phi: calc(1rem * var(--phi));
+  --rem-div-phi: calc(1rem / var(--phi));
   /* --phi_pt: 1.618pt; */
   /*
 		Golden Fibonacci
@@ -22,11 +24,12 @@
   --phi_2: calc(var(--phi_3) / var(--phi));
   --phi_1: calc(var(--phi_3) - var(--phi_2));
 
-  --h1: calc(var(--h2) * var(--phi));
-  --h2: calc(var(--h3) * var(--phi));
-  --h3: calc(var(--h4) * var(--phi));
-  --h4: calc(var(--h5) * var(--phi));
+  --h6: 1rem;
   --h5: calc(var(--h6) * var(--phi));
+  --h4: calc(var(--h5) * var(--phi));
+  --h3: calc(var(--h4) * var(--phi));
+  --h2: calc(var(--h3) * var(--phi));
+  --h1: calc(var(--h2) * var(--phi));
 
   /* Colors */
   --primary: #3399ff;

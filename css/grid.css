@@ -8,7 +8,7 @@
 .row {
   width: 100%;
   position: relative;
-  margin: calc(1rem / 1.618) auto;
+  margin: var(--rem-div-phi) auto;
   display: flex;
   flex-wrap: wrap;
 }

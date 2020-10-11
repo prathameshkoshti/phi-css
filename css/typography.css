@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Code|Playfair+Display|Poppins&display=swap");
 :root {
-  --h6: 16px;
   /* Font Family */
   --sans-serif-font: "Poppins", sans-serif;
   --serif-font: "Playfair Display", serif;
@@ -94,7 +93,7 @@ td {
   color: var(--black);
   text-align: left;
   word-wrap: break-word;
-  letter-spacing: calc(1px / 1.618);
+  letter-spacing: calc(1px / var(--phi));
 }
 
 /*
@@ -133,7 +132,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  margin-bottom: 1.618rem;
+  margin-bottom: calc(1rem * 1.618);
   letter-spacing: 0.1rem;
 }
 h6 {
@@ -161,7 +160,7 @@ h1 {
 }
 p {
   max-width: 80ch;
-  margin-bottom: 1.618rem;
+  margin-bottom: var(--rem-mul-phi);
 }
 
 ul {
@@ -173,16 +172,9 @@ ol {
 ul,
 ol,
 dl {
-  margin-top: 0;
-  padding-left: 1.618rem;
+  padding-left: var(--rem-mul-phi);
   flex-basis: 100%;
-  margin-bottom: calc(1rem / 0.618);
-  margin-left: calc(1rem / 0.618);
-}
-dl,
-ul,
-ol {
-  margin-bottom: calc(1rem * var(--phi));
+  margin: 0 0 var(--rem-mul-phi) var(--rem-mul-phi);
 }
 
 dd,
@@ -194,7 +186,7 @@ dt {
   font-weight: 600;
 }
 dd {
-  margin-left: calc(2 * 1.618rem);
+  margin-left: calc(var(--rem-mul-phi) * var(--phi));
 }
 
 blockquote {
@@ -254,9 +246,9 @@ code {
 pre {
   border-radius: 3px;
   width: 100%;
-  padding: 1rem 1.618rem;
+  padding: 1rem var(--rem-mul-phi);
   font-size: 12px;
-  margin: 1.618rem auto;
+  margin: var(--rem-mul-phi) auto;
 }
 
 strong {
