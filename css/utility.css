@@ -1,32 +1,32 @@
 :root {
   /* Crucial Values*/
-  --phi_value: 1.618;
-  /* --phi_value_pt: 1.618pt; */
+  --phi: 1.618;
+  /* --phi_pt: 1.618pt; */
   /*
 		Golden Fibonacci
 	*/
   --base: 100%;
 
-  --phi_10: calc(var(--base) / var(--phi_value));
+  --phi_10: calc(var(--base) / var(--phi));
   --phi_9: calc(var(--base) - var(--phi_10));
 
-  --phi_8: calc(var(--phi_9) / var(--phi_value));
+  --phi_8: calc(var(--phi_9) / var(--phi));
   --phi_7: calc(var(--phi_9) - var(--phi_8));
 
-  --phi_6: calc(var(--phi_7) / var(--phi_value));
+  --phi_6: calc(var(--phi_7) / var(--phi));
   --phi_5: calc(var(--phi_7) - var(--phi_6));
 
-  --phi_4: calc(var(--phi_5) / var(--phi_value));
+  --phi_4: calc(var(--phi_5) / var(--phi));
   --phi_3: calc(var(--phi_5) - var(--phi_4));
 
-  --phi_2: calc(var(--phi_3) / var(--phi_value));
+  --phi_2: calc(var(--phi_3) / var(--phi));
   --phi_1: calc(var(--phi_3) - var(--phi_2));
 
-  --h1: calc(var(--h2) * var(--phi_value));
-  --h2: calc(var(--h3) * var(--phi_value));
-  --h3: calc(var(--h4) * var(--phi_value));
-  --h4: calc(var(--h5) * var(--phi_value));
-  --h6: calc(var(--h5) / var(--phi_value));
+  --h1: calc(var(--h2) * var(--phi));
+  --h2: calc(var(--h3) * var(--phi));
+  --h3: calc(var(--h4) * var(--phi));
+  --h4: calc(var(--h5) * var(--phi));
+  --h6: calc(var(--h5) / var(--phi));
 
   /* Colors */
   --primary: #3399ff;

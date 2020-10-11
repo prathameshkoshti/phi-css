@@ -88,7 +88,7 @@ tr,
 th,
 td {
   font-size: var(--h5);
-  line-height: var(--phi_value);
+  line-height: var(--phi);
   font-family: var(--sans-serif-font);
   font-weight: 400;
   color: var(--black);
@@ -182,7 +182,7 @@ dl {
 dl,
 ul,
 ol {
-  margin-bottom: calc(1rem * var(--phi_value));
+  margin-bottom: calc(1rem * var(--phi));
 }
 
 dd,
@@ -202,7 +202,7 @@ blockquote {
   border-left: 0.3rem solid var(--accent_color);
   margin-left: 0;
   margin-right: 0;
-  padding: 10px calc(10px * var(--phi_value));
+  padding: 10px calc(10px * var(--phi));
 }
 
 blockquote *:last-child {
