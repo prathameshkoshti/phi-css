@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Fira+Code|Playfair+Display|Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Fira+Code|Playfair+Display|Poppins&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Playfair+Display:wght@400;700;900&family=Poppins:wght@100;400;600;900&display=swap');
 :root {
   /* Font Family */
   --sans-serif-font: "Poppins", sans-serif;
@@ -133,27 +134,21 @@ h5,
 h6 {
   font-weight: 600;
   margin-bottom: calc(1rem * 1.618);
-  letter-spacing: 0.1rem;
 }
 h6 {
   font-size: var(--h6);
-  letter-spacing: 0;
 }
 h5 {
   font-size: var(--h5);
-  letter-spacing: 0.02rem;
 }
 h4 {
   font-size: var(--h4);
-  letter-spacing: 0.04rem;
 }
 h3 {
   font-size: var(--h3);
-  letter-spacing: 0.06rem;
 }
 h2 {
   font-size: var(--h2);
-  letter-spacing: 0.08rem;
 }
 h1 {
   font-size: var(--h1);
